@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body, h1, h5 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%; margin: 0;}
+    .content {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: rgba(15, 57, 56, 1);
+      color: #fff;
+    }
+    .title {
+      text-align: center;
+      margin-top: 200px;
+      font-size: 3em;
+      font-weight: bold; /* Make the title bolder */
+    }
+    .subtitle {
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: -400px; /* Move the subtitle up */
+    }
+    .menu-contact {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+    .contact-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .bottom-text {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="content">
+  <div class="title">
+    <p>MID TOWN<br>RESTAURANT</p>
+  </div>
+  <div class="subtitle">
+    <p>BREAKFAST | LUNCH | DINNER</p>
+  </div>
+  <div class="menu-contact w3-container w3-large">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button">Menu</button></p>
+  </div>
+  <div class="contact-button w3-container w3-large">
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button">Contact</button></p>
+  </div>
+  <div class="bottom-text w3-container">
+    <h5 class="w3-xlarge" style="margin-bottom: 10px;">Open From 8AM - 12AM</h5>
+    <h5 class="w3-large" style="margin-bottom: 0;">Emerald Residency Building, Opp. KSRTC Bus Stand, Kokkalai, Thrissur</h5>
+  </div>
+</div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Breakfast</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Plain Roast <b>₹0.00</b></h5>
+      <h5>Poori Masala <b>₹0.00</b></h5>
+      <h5>Ghee Roast <b>₹0.00</b></h5>
+      <h5>Onion Roast <b>₹0.00</b></h5>
+      <h5>Masala Dosa <b>₹0.00</b></h5>
+      <h5>Paneer Dosa <b>₹0.00</b></h5>
+      <h5>Plain Oothappam <b>₹0.00</b></h5>
+      <h5>Onion Oothappam <b>₹0.00</b></h5>
+      <h5>Ghee Roast <b>₹0.00</b></h5>
+      <h5>Tomato Oothappam <b>₹0.00</b></h5>
+      <h5>Masala Oothappam (Onion\Tomato) <b>₹0.00</b></h5>
+      <h5>Sambar Vada <b>₹0.00</b></h5>
+      <h5>Curd Vada <b>₹0.00</b></h5>
+      <h5>Idly <b>₹0.00</b></h5>
+      <h5>Uzhunnu Vada <b>₹0.00</b></h5>
+      <h5>Puttu <b>₹0.00</b></h5>
+      <h5>Appam <b>₹0.00</b></h5>
+      <h5>Noolappam <b>₹0.00</b></h5>
+      <h5>Chappathi <b>₹0.00</b></h5>
+      <h5>Parotta <b>₹0.00</b></h5>
+      <b>Non-Veg Dosa</b>
+      <h5>Egg Dosa <b>₹0.00</b></h5>
+      <h5>Chicken Dosa <b>₹0.00</b></h5>
+      <h5>Beef Dosa <b>₹0.00</b></h5>
+      <h5>Prawns Dosa <b>₹0.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Soup</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Clear Soup Veg <b>₹0.00</b></h5>
+      <h5>Mushroom Soup <b>₹0.00</b></h5>
+      <h5>Tomato Soup <b>₹0.00</b></h5>
+      <h5>Hot & Sour Veg. Soup <b>₹0.00</b></h5>
+      <h5>Sweet Corn Veg Soup <b>₹0.00</b></h5>
+      <h5>Sweet Corn Egg Soup <b>₹0.00</b></h5>
+      <h5>Sweet Corn Chicken Soup <b>₹0.00</b></h5>
+      <h5>Clear Soup Chicken <b>₹0.00</b></h5>
+      <h5>Manchow Chicken Soup <b>₹0.00</b></h5>
+      <h5>Hot & Sour Chicken Soup <b>₹0.00</b></h5>
+      <h5>Cream of Chicken Soup <b>₹0.00</b></h5>
+      <h5>Chicken Noodles Soup <b>₹0.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Starters</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Green Salad <b>₹0.00</b></h5>
+      <h5>Gobi 65 <b>₹0.00</b></h5>
+      <h5>Paneer 65 <b>₹0.00</b></h5>
+      <h5>Shredded Chilly Chicken <b>₹0.00</b></h5>
+      <h5>Crispy Chicken <b>₹0.00</b></h5>
+      <h5>Chicken Lollipop (8 Pcs) <b>₹0.00</b></h5>
+      <h5>Spicy Chicken Winglets(8 Pcs) <b>₹0.00</b></h5>
+      <h5>Dragon Chicken <b>₹0.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Pulao</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Veg Pulao <b>₹0.00</b></h5>
+      <h5>Chicken Pulao <b>₹0.00</b></h5>
+      <h5>Mutton Pulao <b>₹0.00</b></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p><b>9061313338 | 9061313339</b></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
